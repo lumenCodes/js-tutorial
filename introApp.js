@@ -7,6 +7,8 @@ let person = {
 console.log(person);
 
 
-console.log("I have a stubborn friend whose surname is ${person.familyname}")
-console.log(person.familyname)
-console.log('he has {person.length} qualities,' )
+console.log("I have a stubborn friend whose surname is" + {person.familyname})
+
+// console.log(person.familyname)
+// console.log('he has {person.length} qualities,')
+// console.log('which are {person.list},')
