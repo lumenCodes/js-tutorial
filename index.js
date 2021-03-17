@@ -8,14 +8,59 @@ const age = 50
 console.log('age');
 
 // objects
-let person = {
+let persons = {
     name: 'Livi',
     age: 29
 };
-console.log(person);
+console.log(persons);
 
-person.name = 'Ezeh Livinus'
-console.log(person.name)
+persons.name = 'Ezeh Livinus'
+console.log(persons.name)
+
+// const vehicle = {
+//     tire : 4,
+//     door : 4,
+//     colour : 'white',
+//     accelarator : true,
+//     move: function() {
+//         console.log('Vehicle is on the move')
+//     },
+//     brake: function() {
+//         console.log('the speed of the vehicle is reduced by half')
+//     },
+//     stop: function() {
+//         console.log('the car has stopped')
+//     }
+// }
+
+
+//constructor functions
+function vehicle (tire, door, colour, accelarator) {
+ return {
+    tire : Number,
+    door : 4,
+    colour : 'white',
+    accelarator : true,
+    move() {
+        console.log('Vehicle is on the move');
+    },
+    brake() {
+        console.log('the speed of the vehicle is reduced by half');
+    },
+    stop() {
+        console.log('the car has stopped');
+    }
+ }
+ 
+}
+console.log(vehicle)
+vehicle.stop
+console.log('I will soon buy a ', vehicle.colour ,'Benz, with ', vehicle.tire, 'tires')
+
+// another instance of a vehicle
+const Jeep = vehicle(2, 2, 'black', 'none') //note that none is suposed to be a boolean value
+console.log(Jeep)
+
 
 //arrays
 
