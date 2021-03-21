@@ -34,7 +34,7 @@ console.log(persons.name)
 // }
 
 
-//constructor functions
+//factory functions
 function vehicle (tire, door, colour, accelarator) {
  return {
     tire : Number,
@@ -60,6 +60,16 @@ console.log('I will soon buy a ', vehicle.colour ,'Benz, with ', vehicle.tire, '
 // another instance of a vehicle
 const Jeep = vehicle(2, 2, 'black', 'none') //note that none is suposed to be a boolean value
 console.log(Jeep)
+
+// Constructor function
+function User(name) {  //Pascal notation
+    this.name = name;
+    this.login = function() {
+        console.log('User logged in');
+    } 
+}
+const admin = new User('Obi');
+User()
 
 
 //arrays
