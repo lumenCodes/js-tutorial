@@ -3,7 +3,7 @@
 let Address = {
     street : 'Ekwulobia street',
     city : 'Awka',
-    zipCode: 001897
+    zipCode: 897
 
 };
 function showAddress(Address) {
@@ -56,7 +56,7 @@ function Post (title, body, author, isLive){
     this.isLive = false;
 
 }
-console.log(post)
+Post()
 
 // 
 
