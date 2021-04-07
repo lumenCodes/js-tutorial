@@ -52,5 +52,21 @@ catch(e) {
     alert(e);
 }
 console.log(car.fullname)
-console.log(car)
+console.log(car) 
+ 
+ 
+//stopwatch object
+function watch(){
+    let startT, endT, running, duration = 0;
 
+    this.start = function(){
+        if (watch)
+        return console.log('watch is on')
+    };
+
+    this.endT = function() {
+
+    };
+}
+
+ 
